@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VA Navigator · KSU Capstone Team 42</title>
+  <meta name="description" content="VA Navigator helps Veterans find mental-health care by describing what they need in plain words. A Kennesaw State University IT capstone project by Team 42.">
+  <meta property="og:title" content="VA Navigator · KSU Capstone Team 42">
+  <meta property="og:description" content="Plain-language search for VA and community mental-health care, with sources shown.">
+  <meta property="og:image" content="https://brabon1004.github.io/ITCapstone-2026/assets/screens/chat.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <aside class="crisis-strip" aria-label="Veterans Crisis Line">
+    <div class="wrap crisis-strip__inner">
+      <p><strong>In crisis right now?</strong> Veterans Crisis Line, any hour.</p>
+      <p class="crisis-strip__actions">
+        <a href="tel:988">Dial 988, press 1</a>
+        <a href="sms:838255">Text 838255</a>
+      </p>
+    </div>
+  </aside>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top" aria-label="VA Navigator, back to top">
+        <span class="brand__mark" aria-hidden="true">V</span>
+        <span class="brand__text">
+          <span class="brand__name">VA Navigator</span>
+          <span class="brand__sub">KSU Capstone · Team 42</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="#problem">Problem</a>
+        <a href="#how">How it works</a>
+        <a href="#app">The app</a>
+        <a href="#team">Team</a>
+        <a class="btn btn--navy btn--sm" href="https://va-navigator.lovable.app/" target="_blank" rel="noopener">Try the app<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1>Describe what you need. <span class="accent">Find care that fits.</span></h1>
+          <p class="lede">VA Navigator is a web app that turns a Veteran's plain-language request into nearby mental-health options from VA and community providers, each one linked to its source.</p>
+          <p class="hero__meta">An IT capstone project at Kennesaw State University, Fall 2026.</p>
+          <div class="hero__actions">
+            <a class="btn btn--navy" href="https://va-navigator.lovable.app/" target="_blank" rel="noopener">Try VA Navigator<span class="visually-hidden"> (opens in a new tab)</span></a>
+            <a class="btn" href="#team">Meet the team</a>
+          </div>
+        </div>
+        <figure class="hero__shot">
+          <div class="frame">
+            <img src="assets/screens/chat.jpg" width="1400" height="1088" alt="VA Navigator home page: a chat panel invites the Veteran to describe their situation in their own words, with filters for location, insurance, VA versus community care, and provenance, and a Veterans Crisis Line banner at the bottom.">
+          </div>
+          <figcaption>The start-a-chat page. One gentle question at a time, and consent before results.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="problem" aria-labelledby="problem-title">
+      <div class="wrap split">
+        <div class="split__head">
+          <h2 id="problem-title">Why Veterans get stuck</h2>
+          <p>Mental-health care for Veterans is spread across VA medical centers, outpatient clinics, Vet Centers, telehealth, and community providers. Knowing where to start is hard.</p>
+        </div>
+        <ul class="problem-list">
+          <li><h3>Care is hard to find</h3><p>Options live on different sites with different rules, and few of them answer the question a Veteran actually has.</p></li>
+          <li><h3>Trust is low</h3><p>Some Veterans distrust the VA to provide care and want to see community options side by side.</p></li>
+          <li><h3>Disabilities get in the way</h3><p>Long forms and dense directories are a barrier for anyone who finds navigation difficult.</p></li>
+          <li><h3>It's overwhelming</h3><p>When someone is already struggling, a maze of links makes it easy to feel lost and give up.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="how-title">How it works</h2>
+          <p>Every request runs through the same five steps. The safety check comes first, before anything else happens.</p>
+        </div>
+        <ol class="steps">
+          <li class="step step--sky">
+            <h3>Describe it</h3>
+            <p>The Veteran types their situation in plain words: where they are, what they're dealing with, and what kind of care they want.</p>
+          </li>
+          <li class="step step--coral">
+            <h3>Safety check</h3>
+            <p>If the message suggests harm to self or others, the Veterans Crisis Line (988, press 1, or text 838255) appears right away. Local matches still follow.</p>
+          </li>
+          <li class="step step--plum">
+            <h3>Understand the need</h3>
+            <p>An AI model pulls out the search details: city and state, clinical need such as PTSD, in-person or virtual, one-on-one or group, and VA or community.</p>
+          </li>
+          <li class="step step--mint">
+            <h3>Search real sources</h3>
+            <p>A directory of about 1,610 VA medical centers, clinics, and Vet Centers, plus live results from FindTreatment.gov and the CMS NPI Registry. "Community only" filters out every VA option.</p>
+          </li>
+          <li class="step step--sun">
+            <h3>Rank and show</h3>
+            <p>Results are ranked by distance, need, format, and insurance. Each one shows its source and the date it was last verified.</p>
+          </li>
+        </ol>
+        <p class="note">VA Navigator helps people find care. It does not diagnose, treat, or decide eligibility. Private searches are never saved.</p>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="app" aria-labelledby="app-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="app-title">Inside the app</h2>
+          <p>Screenshots from the working prototype, Milestone 2.</p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <div class="frame"><img src="assets/screens/privacy.jpg" width="1400" height="1182" loading="lazy" alt="Privacy and security page explaining what data VA Navigator stores and how it is protected."></div>
+            <figcaption><strong>Privacy &amp; security.</strong> A plain explanation of how and where data is used, and how it's protected.</figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img src="assets/screens/history.jpg" width="1400" height="1105" loading="lazy" alt="History page listing previous chats with options to reopen or delete each one, or clear all history."></div>
+            <figcaption><strong>History.</strong> Reopen or delete past chats, or clear everything at once.</figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img src="assets/screens/account.jpg" width="1400" height="1012" loading="lazy" alt="My account page with saved preferences, a sign-out button, and an option to delete the account and all its data."></div>
+            <figcaption><strong>My account.</strong> Saved preferences, sign out, and one-step deletion of the account and all its data.</figcaption>
+          </figure>
+          <figure>
+            <div class="frame"><img src="assets/screens/admin.jpg" width="1400" height="836" loading="lazy" alt="Admin analytics dashboard showing user totals, saved searches, care options on file, most requested needs, and most searched locations."></div>
+            <figcaption><strong>Admin.</strong> Platform analytics, care options, data sources, admin roles, AI service, and the audit log.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="wrap split">
+        <div class="split__head">
+          <h2 id="stack-title">What it's built with</h2>
+          <p>Security work so far includes row-level security, admin lockout, prompt-injection protection, and patched dependencies.</p>
+        </div>
+        <dl class="stack">
+          <div><dt>App</dt><dd><span class="chip chip--sky">TanStack Start</span><span class="chip chip--sky">React</span><span class="chip chip--sky">Tailwind CSS</span></dd></div>
+          <div><dt>Data</dt><dd><span class="chip chip--mint">Supabase</span><span class="chip chip--mint">PostgreSQL with row-level security</span></dd></div>
+          <div><dt>AI</dt><dd><span class="chip chip--plum">OpenRouter</span><span class="chip chip--plum">Grok-family model</span></dd></div>
+          <div><dt>Care sources</dt><dd><span class="chip chip--soft">VA facility directory</span><span class="chip chip--soft">FindTreatment.gov (SAMHSA)</span><span class="chip chip--soft">CMS NPI Registry</span></dd></div>
+          <div><dt>Hosting</dt><dd><span class="chip">Lovable Cloud</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="team" aria-labelledby="team-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="team-title">The team</h2>
+          <p>Four IT students at Kennesaw State. We're happy to talk about the project, internships, and jobs.</p>
+        </div>
+        <ul class="team" id="team-list"></ul>
+        <noscript><p class="note">Turn on JavaScript to see team profiles.</p></noscript>
+
+        <div class="advisors">
+          <div>
+            <h3>Sponsors</h3>
+            <p>Nikhil Kassetty, Ravitez Dondeti, and Sai Vineela Ganti</p>
+          </div>
+          <div>
+            <h3>Professor</h3>
+            <p>Donald Privitera, IT 4983 Capstone</p>
+          </div>
+          <div>
+            <h3>School</h3>
+            <p>Kennesaw State University, College of Computing and Software Engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div>
+        <p class="site-footer__title">In a crisis right now?</p>
+        <p>The Veterans Crisis Line connects you with a real person, any hour.</p>
+      </div>
+      <p class="site-footer__actions">
+        <a class="btn btn--paper" href="tel:988">Dial 988, press 1</a>
+        <a class="btn btn--ink" href="sms:838255">Text 838255</a>
+      </p>
+      <p class="site-footer__fine">VA Navigator is a student project. It is independent and not affiliated with the U.S. Department of Veterans Affairs, and it is not a substitute for emergency care. © 2026 Capstone Team 42, Kennesaw State University.</p>
+    </div>
+  </footer>
+
+  <template id="member-template">
+    <li class="member">
+      <img class="member__photo" width="640" height="640" loading="lazy" alt="">
+      <div class="member__body">
+        <h3 class="member__name"></h3>
+        <p class="member__role"></p>
+        <dl class="member__facts">
+          <div data-field="study"><dt>Studying</dt><dd></dd></div>
+          <div data-field="graduation"><dt>Graduating</dt><dd></dd></div>
+          <div data-field="internship"><dt>Internship</dt><dd></dd></div>
+          <div data-field="dreamJob"><dt>Dream job</dt><dd></dd></div>
+          <div data-field="experience"><dt>Experience</dt><dd></dd></div>
+        </dl>
+        <div class="member__projects" data-field="projects">
+          <h4>Other projects</h4>
+          <ul></ul>
+        </div>
+        <p class="member__links">
+          <a class="btn btn--sm" data-link="email">Email</a>
+          <a class="btn btn--sm btn--sky" data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--sm" data-link="github" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </li>
+  </template>
+
+  <script src="js/team-data.js"></script>
+  <script src="js/team.js"></script>
+</body>
+</html>
