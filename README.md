@@ -2,7 +2,7 @@
 
 Project website for Team 42's IT capstone at Kennesaw State University (Fall 2026).
 
-**Live site:** https://brabon1004.github.io/va-navigator-capstone/
+**Live site:** https://va-navigator.github.io/
 **The app:** https://va-navigator.lovable.app/
 
 VA Navigator helps Veterans find mental-health care. They describe what they need in plain words and get nearby VA and community options, each linked to its source.
